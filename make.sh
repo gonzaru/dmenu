@@ -5,7 +5,7 @@ set -eu
 
 # compile dmenu
 ret=""
-if make clean && make && strip dmenu && strip stest; then
+if make clean && make && strip dmenu stest; then
   echo "OK"
   ret=0
 else
